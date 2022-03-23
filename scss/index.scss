@@ -1,10 +1,55 @@
 // COLOUR SCHEME VARIABLES
 $primary-color: #ffffff;
-// $secondary-color: #e9882d;
 $secondary-color: #e45430;
 $tertiary-color: #333;
 
+// FONT STYLE VARIABLES
+$primary-font: 'Mukta Vaani', sans-serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+
+// BASE STYLING
+
+* {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: $primary-color;
+  color: $tertiary-color;
+  font: 100% $primary-font;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: $secondary-font;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.6em;
+  word-wrap: break-word;
+}
+
+// LINK STYLING
+
+a,
+a:visited {
+  color: $tertiary-color;
+  text-decoration: none;
+}
+
+a:hover {
   color: $secondary-color;
+  text-decoration: none;
 }

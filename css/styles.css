@@ -1,3 +1,34 @@
+* {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #ffffff;
-  color: #e45430; }
+  color: #333;
+  font: 100% "Mukta Vaani", sans-serif;
+  overflow-x: hidden; }
+
+h1,
+h2 {
+  font-family: "Josefin Sans", sans-serif; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1em; }
+
+p {
+  font-size: 0.6em;
+  word-wrap: break-word; }
+
+a,
+a:visited {
+  color: #333;
+  text-decoration: none; }
+
+a:hover {
+  color: #e45430;
+  text-decoration: none; }
