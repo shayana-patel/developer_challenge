@@ -1,0 +1,27 @@
+{
+  "name": "developer_challenge",
+  "version": "1.0.0",
+  "description": "Coding a well-structured, user-friendly UI for scale, with  minimal help from UI libraries/frameworks",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch --include-path scss scss/index.scss css/styles.css",
+    "dev": "nodemon -e scss -x 'npm run scss' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shayana-patel/developer_challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shayana-patel/developer_challenge/issues"
+  },
+  "homepage": "https://github.com/shayana-patel/developer_challenge#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
