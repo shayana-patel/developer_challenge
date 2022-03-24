@@ -1,1 +1,23 @@
 @import "./variables.scss";
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 320px) {
+  .header,
+  .prm-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-body,
+  .grid-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .grid-item-1 {
+    margin-left: 0;
+  }
+}
+

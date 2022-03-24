@@ -136,6 +136,19 @@ a:hover {
   color: #e45430;
   text-decoration: none; }
 
+@media screen and (max-width: 320px) {
+  .header,
+  .prm-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-body,
+  .grid-container {
+    display: flex;
+    flex-direction: column; }
+  .grid-item-1 {
+    margin-left: 0; } }
+
 * {
   left: 0;
   top: 0;
