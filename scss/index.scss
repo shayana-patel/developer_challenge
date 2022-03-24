@@ -1,11 +1,8 @@
-// COLOUR SCHEME VARIABLES
-$primary-color: #ffffff;
-$secondary-color: #e45430;
-$tertiary-color: #333;
-
-// FONT STYLE VARIABLES
-$primary-font: 'Mukta Vaani', sans-serif;
-$secondary-font: 'Josefin Sans', sans-serif;
+// // IMPORTED SCSS FILES
+@import "./variables.scss";
+@import "./header-footer-nav.scss";
+@import "./main-section.scss";
+@import "./media-queries.scss";
 
 // BASE STYLING
 
@@ -39,17 +36,4 @@ h2 {
 p {
   font-size: 0.6em;
   word-wrap: break-word;
-}
-
-// LINK STYLING
-
-a,
-a:visited {
-  color: $tertiary-color;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $secondary-color;
-  text-decoration: none;
 }

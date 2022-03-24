@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+// HEADER STYLING
+
+.header {
+  background-color: $secondary-color;
+  color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  font-family: $secondary-font;
+  justify-content: space-between;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+// NAVIGATION STYLING
+
+.prm-nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none; }
+
+.prm-nav-item {
+  margin: 5px; }
+
+.sec-nav-item {
+  list-style: none; }
+
+.sec-nav-item {
+  background-color: $secondary-color;
+  border: 2px $secondary-color solid;
+  border-radius: 5px;
+  margin: 2px; }
+
+a,
+a:visited {
+  color: $primary-color;
+  text-decoration: none; }
+
+a:hover {
+  color: $tertiary-color;
+  text-decoration: none; }
+
+
+// FOOTER STYLING
+
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  line-height: 25px;
+  text-align: center; }
