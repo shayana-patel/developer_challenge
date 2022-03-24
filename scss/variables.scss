@@ -6,3 +6,13 @@ $tertiary-color: #e45430;
 // FONT STYLE VARIABLES
 $primary-font: 'Mukta Vaani', sans-serif;
 $secondary-font: 'Josefin Sans', sans-serif;
+
+// LINKS STYLING
+a,
+a:visited {
+  color: $primary-color;
+  text-decoration: none; }
+
+a:hover {
+  color: $tertiary-color;
+  text-decoration: none; }
