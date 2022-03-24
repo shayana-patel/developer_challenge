@@ -118,15 +118,6 @@ a:hover {
 .figure-element {
   margin: 5px; }
 
-.image-caption,
-.image-caption > a {
-  font-style: italic;
-  font-size: 0.4em;
-  color: #e45430; }
-
-.image-caption > a:hover {
-  color: #333; }
-
 a,
 a:visited {
   color: #ffffff;

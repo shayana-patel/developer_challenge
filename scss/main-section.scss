@@ -74,14 +74,3 @@
 .figure-element {
   margin: 5px;
 }
-
-.image-caption,
-.image-caption > a {
-  font-style: italic;
-  font-size: 0.4em;
-  color: $tertiary-color
-}
-
-.image-caption > a:hover {
-  color: $secondary-color;
-}

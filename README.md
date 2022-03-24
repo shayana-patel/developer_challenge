@@ -13,3 +13,6 @@ I created wire-frames to plan the layout and figure out the elements I would nee
 I used a mixture of grid and flex display for various elements. For the header I used flex display to make it easier for changing flex direction at different viewpoints. For the section element I used grid display. This design decision was made to make it easier to design the page layout without having to use floats and positioning to get elements into the desired layout.
 
 I then used flex display on the section (grid-container) element to make the layout responsive at different viewports. By doing so it meant the content of the grid-container was not squished or cut off on various screen sizes.
+
+
+NOTE: The puppy images used in the project were taken from the following source <a href="https://cuddleclones.com/blogs/all/a-simple-guide-for-training-golden-retriever-puppies">Cuddle Clones</a>
