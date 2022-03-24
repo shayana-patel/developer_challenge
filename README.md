@@ -114,5 +114,13 @@ sortActivePlans(plans);
 flatPlanCost(plans);
 
 ```
-
+5. Unfortunately I was unable to completely solve this question. I know that a loop is required to iterate through the objects inside the array, however after several attempts the code below is the closest I got. The console.log shows the plans and what their cost is for a 7 day period where 29kWh of electricity is used. 
+```
+let filteredPlans = plans.filter(plan => plan.endDate > date);
+  
+  for (let i = 0; i <= filteredPlans.length; i++) {
+    let comparePlanCost = ("Plan: " + filteredPlans[i].name + ", cost: " + ((filteredPlans[i].dayRate * 7) * (filteredPlans[i].variableRate * 29 * 24)));
+    console.log(comparePlanCost);
+}
+```
 
