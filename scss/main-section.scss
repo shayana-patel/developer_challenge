@@ -29,9 +29,59 @@
   color: $secondary-color;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   margin-left: 40px;
   padding: 3px;
 }
 
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 3px;
+}
+
+.grid-item-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 3px;
+}
+
+.grid-item-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 3px;
+}
+
+.grid-item-2,
+.grid-item-3,
+.grid-item-4 {
+  border: 2px $tertiary-color solid;
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.figure-element {
+  margin: 5px;
+}
+
+.image-caption,
+.image-caption > a {
+  font-style: italic;
+  font-size: 0.4em;
+  color: $tertiary-color
+}
+
+.image-caption > a:hover {
+  color: $secondary-color;
+}
