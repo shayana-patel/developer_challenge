@@ -1,1 +1,13 @@
 @import "./variables.scss";
+
+// MAIN ELEMENT STYLING
+
+.main-body {
+  display: block;
+}
+
+.banner-element {
+  background-color: $tertiary-color;
+  height: 50px;
+  line-height: 50px;
+}
