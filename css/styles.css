@@ -149,6 +149,19 @@ a:hover {
   .grid-item-1 {
     margin-left: 0; } }
 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .header,
+  .prm-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-body,
+  .grid-container {
+    display: flex;
+    flex-direction: column; }
+  .grid-item-1 {
+    margin-left: 0px; } }
+
 * {
   left: 0;
   top: 0;
