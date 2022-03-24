@@ -180,11 +180,11 @@ a:hover {
   .grid-item-1 {
     margin-left: 10px; } }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .grid-conatiner {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .grid-container {
     left: 0;
     top: 0;
-    margin: 20px 80px;
+    margin: 20px 50px;
     padding: 0px; }
   h1 {
     font-size: 1.5em; }
