@@ -22,10 +22,15 @@ I then used flex display on the section (grid-container) element to make the lay
 NOTE: The puppy images used in the project were taken from the following source [Cuddle Clones]("https://cuddleclones.com/blogs/all/a-simple-guide-for-training-golden-retriever-puppies")
 
 # Written Questions
-1. Using .filter()
-```
+  Global Variables:
+  ```
   let today = new Date();
   let date = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+(today.getDate());
+
+  ```
+
+1. Using .filter()
+```
 
 function getActivePlans (arr) {
   let activePlans = arr.filter(plan => plan.endDate > date)
@@ -51,6 +56,62 @@ function sortActivePlans (arr) {
 }
 
 sortActivePlans(plans);
+
+```
+
+3.
+  The Variable Rate:
+  ```
+  function offPeakVariableRate (arr) {
+  let offPeakRate = arr
+    .filter(plan => plan.endDate > date && plan.name === 'Off Peak')
+    .reduce((obj, plan) => {
+      obj[plan.name] = plan.variableRate;
+      return plan.variableRate
+    },{})
+    return offPeakRate;
+  }
+  offPeakVariableRate(plans);
+
+  ```
+  The Day Rate:
+  ```
+  function offPeakDayRate (arr) {
+    let offPeakRate = arr
+      .filter(plan => plan.endDate > date && plan.name === 'Off Peak')
+      .reduce((obj, plan) => {
+        obj[plan.name] = plan.dayRate;
+        return plan.dayRate
+      }, {})
+    return offPeakRate;
+  }
+  offPeakDayRate(plans);
+
+  ```
+
+4.
+```
+  function flatPlanCost (arr) {
+
+  let filteredPlan = arr
+    .filter(plan => plan.endDate > date && plan.name === 'Flat')
+
+  let flatPlanDayRate = filteredPlan
+    .reduce((obj, plan) => {
+      obj[plan.name] = plan.dayRate;
+      return plan.dayRate * 7
+    }, {});
+
+  let flatPlanVarRate = filteredPlan
+    .reduce((obj, plan) => {
+      obj[plan.name] = plan.variableRate;
+      return plan.variableRate * 29 * 24
+    }, {});
+  
+  return flatPlanDayRate * flatPlanVarRate;
+}
+
+flatPlanCost(plans);
 
 ```
 
