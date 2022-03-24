@@ -162,6 +162,15 @@ a:hover {
   .grid-item-1 {
     margin-left: 0px; } }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid-container {
+    left: 0;
+    top: 0;
+    margin: 20px 30px;
+    padding: 0; }
+  .grid-item-1 {
+    margin-left: 10px; } }
+
 * {
   left: 0;
   top: 0;
