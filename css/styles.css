@@ -24,7 +24,8 @@ a:hover {
   font-family: "Josefin Sans", sans-serif;
   justify-content: space-between;
   line-height: 30px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  position: sticky; }
 
 .prm-nav-list {
   display: flex;
